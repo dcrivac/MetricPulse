@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB11223344556677889900AA /* MetricPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11223344556677889900AA /* MetricPulseApp.swift */; };
+		FB11223344556677889900BB /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11223344556677889900BB /* Metric.swift */; };
+		FB11223344556677889900CC /* MetricListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11223344556677889900CC /* MetricListView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8E41BB922FCEA82900EA5AA1 /* MetricPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetricPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA11223344556677889900AA /* MetricPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricPulseApp.swift; sourceTree = "<group>"; };
+		FA11223344556677889900BB /* Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
+		FA11223344556677889900CC /* MetricListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		8E41BB942FCEA82900EA5AA1 /* MetricPulse */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MetricPulse;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8E41BB8F2FCEA82900EA5AA1 /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		8E41BB892FCEA82900EA5AA1 = {
 			isa = PBXGroup;
 			children = (
-				8E41BB942FCEA82900EA5AA1 /* MetricPulse */,
+				8E41BBA32FCEA97B00EA5AA1 /* New Group */,
 				8E41BB932FCEA82900EA5AA1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,16 @@
 				8E41BB922FCEA82900EA5AA1 /* MetricPulse.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8E41BBA32FCEA97B00EA5AA1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				FA11223344556677889900AA /* MetricPulseApp.swift */,
+				FA11223344556677889900BB /* Metric.swift */,
+				FA11223344556677889900CC /* MetricListView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +70,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				8E41BB942FCEA82900EA5AA1 /* MetricPulse */,
 			);
 			name = MetricPulse;
 			packageProductDependencies = (
@@ -119,6 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB11223344556677889900AA /* MetricPulseApp.swift in Sources */,
+				FB11223344556677889900BB /* Metric.swift in Sources */,
+				FB11223344556677889900CC /* MetricListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
