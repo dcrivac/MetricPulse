@@ -5,8 +5,8 @@ import Observation
 final class NotificationPermission {
     var status: UNAuthorizationStatus = .notDetermined
 
-    func refresh() {
-        let settings = UNUserNotificationCenter.current().notificationSettings()
+    func refresh() async {
+        let settings = await UNUserNotificationCenter.current().notificationSettings()
         status = settings.authorizationStatus
     }
 
@@ -14,6 +14,6 @@ final class NotificationPermission {
         guard let granted = try? await UNUserNotificationCenter.current()
                 .requestAuthorization(options: [.alert, .badge, .sound]),
               granted else { return }
-        refresh()
+        await refresh()
     }
 }

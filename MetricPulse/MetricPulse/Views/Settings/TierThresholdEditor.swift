@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct TierThresholdEditor: View {
     @Bindable var tier: TierConfig

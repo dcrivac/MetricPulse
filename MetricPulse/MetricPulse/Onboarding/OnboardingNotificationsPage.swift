@@ -20,9 +20,9 @@ struct OnboardingNotificationsPage: View {
 
             VStack(spacing: 8) {
                 MockNotif(title: "Shift Aging Out",
-                          body: "A strong OCR/OTM shift expires tomorrow. Log a shift to compensate.")
+                          message: "A strong OCR/OTM shift expires tomorrow. Log a shift to compensate.")
                 MockNotif(title: "Metrics Check",
-                          body: "OCR 88% — below Premier. 2 perfect shifts gets you there.")
+                          message: "OCR 88% — below Premier. 2 perfect shifts gets you there.")
             }
             .padding(.horizontal, 20)
 
@@ -44,13 +44,13 @@ struct OnboardingNotificationsPage: View {
 
             Spacer()
         }
-        .onAppear { permission.refresh() }
+        .task { await permission.refresh() }
     }
 }
 
 private struct MockNotif: View {
     let title: String
-    let body: String
+    let message: String
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
@@ -60,7 +60,7 @@ private struct MockNotif: View {
                 .overlay { Image(systemName: "chart.bar.fill").foregroundStyle(.black) }
             VStack(alignment: .leading, spacing: 2) {
                 Text(title).font(.subheadline.bold())
-                Text(body).font(.caption).foregroundStyle(.secondary)
+                Text(message).font(.caption).foregroundStyle(.secondary)
             }
             Spacer()
         }
